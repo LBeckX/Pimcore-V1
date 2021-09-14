@@ -19,7 +19,6 @@ services:
     image: pimcore/pimcore:PHP8.0-apache
     volumes:
       - .:/var/www/html:cached
-      - pimcore-var:/var/www/html/var
       - pimcore-vendor:/var/www/html/vendor
     ports:
      - "80:80"
@@ -31,5 +30,4 @@ services:
 
 volumes:
   pimcore-database:
-  pimcore-var:
   pimcore-vendor:
